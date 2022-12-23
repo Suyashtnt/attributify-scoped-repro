@@ -15,3 +15,5 @@ declare global {
 		interface HTMLAttributes<T> extends AttributifyAttributes {}
 	}
 }
+
+export {};
