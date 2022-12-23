@@ -1,4 +1,3 @@
-
 import type { AttributifyAttributes } from '@unocss/preset-attributify'
 
 declare global {
@@ -12,7 +11,7 @@ declare global {
 		// interface Platform {}
 	}
 
-  namespace svelte.JSX {
-    interface HTMLAttributes<T> extends AttributifyAttributes {}
-  }
+	declare namespace svelteHTML {
+		interface HTMLAttributes<T> extends AttributifyAttributes {}
+	}
 }
